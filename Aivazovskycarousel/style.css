@@ -1,0 +1,88 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Arapey', serif;}
+h1{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.5em;
+}
+.select{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.select .pht{
+    float:left;
+    margin:0.5%;
+    width: 19%;
+    height: 150px;
+    background-size: cover;
+    background-position-x: center;    
+    background-position-y: bottom;
+    cursor: pointer;
+}
+.carusel{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+#right{
+    position: absolute;
+    top:50%;
+    right: 2%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;    
+}
+#left{
+    position: absolute;
+    top:50%;
+    left: 2%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#close{
+    position: absolute;
+    top:2px;
+    right: 5px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;    
+}
+.monitor{
+    width: 65%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.inner{
+    height: 400px;
+    position: absolute;
+    left: 0%;
+    transition: 1s;
+}
+.slide{
+    height: 400px;
+    float: left;
+    background-position-x: center;    
+    background-position-y: bottom;
+    background-size: cover;
+}
+@media screen and (max-width: 1025px) {
+    h1{font-size: 1.2em;}
+    .carusel , .monitor , .inner , .slide {height: 300px}
+    .monitor{width: 80%}
+    .select .pht{height: 100px}
+}

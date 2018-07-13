@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aivazovsky Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        Ivan Konstantinovich Aivazovsky<br>
+        (1817-1900)
+    </h1>
+    <div class="select">
+        <div class="pht" style="background-image: url(img/ai1.jpg)"></div>
+        <div class="pht" style="background-image: url(img/ai2.png);background-position-y: center"></div>
+        <div class="pht" style="background-image: url(img/ai3.jpeg);background-position-y: center"></div>
+        <div class="pht" style="background-image: url(img/ai4.jpg)"></div>
+        <div class="pht" style="background-image: url(img/ai5.jpg)"></div>
+    </div>
+    <div class="carusel">
+        <div class="monitor">
+            <div class="inner">
+                <div class="slide" style="background-image: url(img/ai1.jpg)"></div>
+                <div class="slide" style="background-image: url(img/ai2.png);background-position-y: center"></div>
+                <div class="slide" style="background-image: url(img/ai3.jpeg);background-position-y: center"></div>
+                <div class="slide" style="background-image: url(img/ai4.jpg)"></div>
+                <div class="slide" style="background-image: url(img/ai5.jpg)"></div>
+            </div>
+            <i class="fa fa-close" id="close"></i>
+            <i class="fa fa-chevron-left" id="left"></i>
+            <i class="fa fa-chevron-right" id="right"></i>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="slide.js"></script>
+</body>
+
+</html>
